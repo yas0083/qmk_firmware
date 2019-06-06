@@ -25,8 +25,7 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM
 keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-[_BASE] =
-LAYOUT( /* Base */
+    [_BASE] = LAYOUT(
         // LOWER
         LOWER, \
         // resume(Command + Option + R)
@@ -35,10 +34,8 @@ LAYOUT( /* Base */
         KC_F8, \
         // step in(F7)
         KC_F7 \
-
-),
-[_LOWER] =
-LAYOUT( /* Base */
+    ),
+    [_LOWER] = LAYOUT(
         // XXXXXXX
         XXXXXXX, \
         // stop(Command + F2)
@@ -47,8 +44,7 @@ LAYOUT( /* Base */
         A(KC_F9), \
         // step out(Shift + F8)
         LSFT(KC_F8) \
-
-)
+    )
 };
 
 void persistent_default_layer_set(uint16_t default_layer) {
